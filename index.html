@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7b35c072c3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>IDE </title>
+</head>
+
+<body>
+    <header>
+        <div class="file name">
+            <input type="text" class="filename" disabled>
+            </input>
+            <img src="./Image/pencil.png" class="headicon" onclick="pen()" alt="">
+        </div>
+        <div class="getfile name">
+            <img src="./Image/document.png" class="headicon" alt="">
+        </div>
+    </header>
+    <div class="iframebox">
+        <div class="textarea">
+
+            <nav class="html heading">
+                <div class="head">
+                    <p class="ptxt">
+                        <img src="./Image/html-5.png" alt="">
+                        HTML
+                    </p>
+                    <i class="fa-solid fa-angle-up icon"></i>
+                </div>
+                <textarea onkeyup="change()" class="htmltext p">
+
+                </textarea>
+            </nav>
+
+            <nav class=" css heading">
+                <div class="head ">
+                    <p class="ptxt">
+                        <img src="./Image/css-3.png" alt="">
+                        CSS
+                    </p>
+                    <i class="fa-solid fa-angle-up icon"></i>
+                </div>
+                <textarea onkeyup="change()" cols="30" class="csstext p">
+                </textarea>
+            </nav>
+
+            <nav class="js heading">
+                <div class="head">
+                    <p class="ptxt">
+                        <img src="./Image/js.png" alt="">
+                        JAVASCRIPT
+                    </p>
+                    <i class="fa-solid fa-angle-up icon"></i>
+                </div>
+                <textarea onkeyup="change()" cols="30" class="jstext p"></textarea>
+            </nav>
+
+        </div>
+        <div class="outputbox">
+            <iframe src="" id="iframe"></iframe>
+        </div>
+        <!-- <iframe src="" id="ff" frameborder="0"></iframe> -->
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>

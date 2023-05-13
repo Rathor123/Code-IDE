@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 6vh; */
+    border-bottom: 1px solid white;
+    background-color: #555;
+}
+
+.name {
+    padding: 5px;
+
+}
+
+
+.filename {
+    display: inline-block;
+    width: 15vw;
+    border: none;
+    background-color: #555;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.filename:focus {
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.filename::placeholder {}
+
+/* padding: 20px; */
+.headicon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.iframebox {
+    display: flex;
+    flex-direction: row;
+}
+
+.textarea {
+    width: 50vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.p {
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #080000;
+}
+
+.p:focus {
+    outline: none;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.heading {
+    border: 1px solid black;
+    height: 100%;
+}
+
+.textarea p {
+    background-color: lightgray;
+}
+
+textarea::selection {
+    background-color: rgb(73, 58, 61);
+}
+
+#iframe {
+    height: 100vh;
+    width: 50vw;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #080000;
+    border-bottom: 1px solid wheat;
+}
+
+.ptxt {
+    padding: 3px 7px;
+    border-radius: 5px 5px 0 0;
+}
+
+.head p {
+    cursor: pointer;
+}
+
+.head i {
+    padding: 4px;
+    margin: 4px;
+    border-radius: 2px;
+    width: 3vw;
+    display: flex;
+    justify-content: center
+}
+
+.txt {
+    height: 100%;
+}
+
+.cc {
+    transition: height 0.3s;
+    height: 4%;
+
+}
+
+.icon {
+    background-color: gray;
+}
+
+.dd {
+    display: none;
+}
+
+img {
+    height: 20px;
+}
